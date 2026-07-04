@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP</title>
+    <link rel="stylesheet" href="weatherAPP.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          name=""
+          class="search-input"
+          id=""
+          placeholder="Enter Your City "
+          spellcheck="false"
+        />
+        <button class="btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button> 
+      </div>
+      <div class="error">
+        <p> Invalid City Name </p>
+      </div>
+      <div class="weather">
+        <img class="weather-icon" src="images/rain.png" />
+        <h1 class="temp">36°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="detail">
+          <div class="col">
+            <img src="images/humidity.png" alt="">
+            <div>
+              <p class="humidity">50%</p>
+              <p> Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" alt="">
+            <div>
+              <p class="wind">15</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
+
+
+
+
+<!-- e1ebb8300c88dc5d0a74dcc282c8f224
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} -->
